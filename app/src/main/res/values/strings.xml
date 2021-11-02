@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Direito Penal </string>
+    <string name="action_settings" />
+    <string name="activity_direito_detalhe">Estude!</string>
+    <string name="txtConteudo">Link</string>
+    <string name="favorito">Favorito</string>
+    <string name="txtConteudo2">link </string>
+
+
+</resources>

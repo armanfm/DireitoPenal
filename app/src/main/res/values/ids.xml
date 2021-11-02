@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="container" type="id" />
+    <item name="action_settings" type="id" />
+    <item name="txtConteudo" type="id" />
+    <item name="txtNome" type="id" />
+    <item name="detalhe" type="id" />
+    <item name="txtAssunto" type="id" />
+    <item name="acao_favorito" type="id" />
+    <item name="tab_layout" type="id" />
+    <item name="viewPager" type="id" />
+    <item name="listDireito" type="id" />
+    <item name="lista" type="id" />
+
+
+</resources>
