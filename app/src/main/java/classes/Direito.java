@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 public class Direito<conteudo> implements Serializable  {
 
-    String assunto;
+    private String assunto;
    // String nome;
-    String conteudo;
+    private String conteudo;
 
 
 
@@ -28,6 +28,21 @@ public class Direito<conteudo> implements Serializable  {
 
     }
 
+    public String getAssunto() {
+        return assunto;
+    }
+
+    public String getConteudo() {
+        return conteudo;
+    }
+
+    public void setAssunto(String assunto) {
+        this.assunto = assunto;
+    }
+
+    public void setConteudo(String conteudo) {
+        this.conteudo = conteudo;
+    }
 
     @Override
     public String toString() {

@@ -9,22 +9,26 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
+import com.example.direitopenal.CulpaFragment;
+import com.example.direitopenal.DireitoListFragment;
+import com.example.direitopenal.ExcludenteFragment;
+
 import java.util.List;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
+    DireitoListFragment dlf;
 
-
-    public FragmentAdapter(FragmentManager fm, Lifecycle lifecycle) {
+    public FragmentAdapter(FragmentManager fm) {
         super(fm);
-    }
+        dlf = new DireitoListFragment();
 
-    public FragmentAdapter(Object supportFragmentManager) {
-        super((FragmentManager) supportFragmentManager);
     }
 
 
     @Override
     public Fragment getItem(int i) {
+
+
         switch (i) {
             case 1:
                 return new CulpaFragment();
@@ -35,7 +39,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
         }
 
 
-        return new DireitoListFragment();
+        return dlf;
     }
 
     @Override
@@ -52,10 +56,10 @@ public class FragmentAdapter extends FragmentPagerAdapter {
                 return "Excludente do Dever Legal";
         }
 
-            return "Tentativa e Consumação";
-        }
-
-
+        return "Tentativa e Consumação";
     }
+
+
+}
 
 
