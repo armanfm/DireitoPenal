@@ -1,30 +1,42 @@
-package com.example.direitopenal;
+package classes;
+
+import android.os.Build;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
+import org.json.JSONObject;
 
 import java.io.Serializable;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Scanner;
 
-public class Direito<conteudo> implements Serializable  {
+public class Direito implements Serializable {
 
+    private Long _id;
     private String assunto;
-   // String nome;
+
+    public Long get_id() {
+        return _id;
+    }
+
+    public void set_id(Long _id) {
+        this._id = _id;
+    }
+
+    private String dicas;
     private String conteudo;
 
 
 
-
-
-    public Direito(String assunto,  String conteudo) {
+    public Direito(String assunto, String conteudo, String dicas) {
         super();
 
-        this.assunto = assunto;
-        //this.nome = nome;
-        this.conteudo = conteudo;
+        this.assunto =  assunto;
+        this.dicas =  dicas;
+        this.conteudo =  conteudo;
     }
 
-    public Direito() {
 
+
+    public Direito() {
 
     }
 
@@ -32,12 +44,20 @@ public class Direito<conteudo> implements Serializable  {
         return assunto;
     }
 
-    public String getConteudo() {
-        return conteudo;
-    }
-
     public void setAssunto(String assunto) {
         this.assunto = assunto;
+    }
+
+    public String getDicas() {
+        return dicas;
+    }
+
+    public void setDicas(String dicas) {
+        this.dicas = dicas;
+    }
+
+    public String getConteudo() {
+        return conteudo;
     }
 
     public void setConteudo(String conteudo) {
@@ -46,7 +66,10 @@ public class Direito<conteudo> implements Serializable  {
 
     @Override
     public String toString() {
-        return assunto ;
+        return assunto;
     }
+
+
+
 }
 
